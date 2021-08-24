@@ -51,3 +51,62 @@ Boolean(-Infinity) //?
 Boolean({}) //?
 Boolean([]) //?
 Boolean(new Date()) //?
+
+/* Numbers */
+5
+0.5
+.5 //?
+5.0 // ?
+Number('5') //?
+typeof(Number('5')) //?
+typeof('5') //?
+typeof(String(5)) //?
+
+// arimética básica
+10 + 5 //?
+10 - 5 //?
+5 * 5 //?
+10 / 2 //?
+5 % 2 //?
+Math.pow(5, 2) //?
+Math.sqrt(9) //?
+
+// métodos
+
+const sum = 5 + 7 //?
+
+typeof sum.toFixed(2) //?
+typeof(sum) //?
+
+typeof sum.toString() //?
+
+
+5 + '5' //?
+typeof(5 + '5') //?
+'6' + 5 //?
+typeof('' + 10) //?
+
+Number(sum) + 5 //?
+
+10 - '5' //?
+5 * '5' //?
+15 / '3' //?
+'5' * 3 //?
+
+typeof(10 - '') //?
+Number('') //?
+10 * '' //?
+10 / '' //?
+
+10 + 'leonidas' //?
+10 - 'leonidas' //?
+
+const nan = 10 - 'leonidas' //?
+
+if (nan === NaN) {
+  console.log('si sin iguales')
+} else {
+  console.log('no son iguales')
+}
+
+typeof(nan) //?

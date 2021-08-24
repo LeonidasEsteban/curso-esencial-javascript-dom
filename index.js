@@ -150,3 +150,30 @@ user.fullname = function() { return `${user.name} ${user.lastname}` }
 user.fullname() //?
 user.fullname = function() { return `${this.name} ${this.lastname}` }
 user.fullname() //?
+
+
+function suma(a, b) {
+  return a + b
+}
+
+suma(5, 5) //?
+
+const resta = function (a, b) {
+  return a - b
+}
+
+resta(17, 5) //?
+
+const multi = (a, b) => {
+  return a * b
+}
+
+multi(5, 7) // ?
+
+user.fullname.bind({name: 'funalo'})() //?
+
+user.fullname = () => { return `${this.name} ${this.lastname}` }
+
+// user.fullname.bind({name: 'funalo'})() //?
+
+['a', 'b', 'c'].map(() => {return 'leonidas'}) // ?

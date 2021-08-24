@@ -19,3 +19,35 @@ fullname.replace('Leonidas', 'Rivaldo') // ?
 fullname.search('xxxxx') // ?
 fullname.toUpperCase() // ?
 
+
+/* Boleanos */
+false
+true
+
+if (name) {
+  console.log('La condición SI se cumplió')
+} else {
+  console.log('La condición NO se cumplió')
+}
+
+// Falsy Values
+Boolean('') //?
+Boolean("") //?
+Boolean(``) //?
+Boolean(0) //?
+Boolean(-0) //?
+Boolean(0n) //?
+Boolean(NaN) //?
+Boolean(null) //?
+Boolean(undefined) //?
+
+// Truthly Values
+Boolean('leonidas') //?
+Boolean(-1) //?
+Boolean(1.1) //?
+Boolean(1n) //?
+Boolean(Infinity) //?
+Boolean(-Infinity) //?
+Boolean({}) //?
+Boolean([]) //?
+Boolean(new Date()) //?

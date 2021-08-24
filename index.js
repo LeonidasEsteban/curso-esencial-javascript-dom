@@ -110,3 +110,43 @@ if (nan === NaN) {
 }
 
 typeof(nan) //?
+
+const user = {
+  name: 'Leonidas',
+  lastname: 'Esteban',
+}
+
+user.name // ?
+
+user['name'] //?
+
+const find = 'lastname'
+
+user[find] //?
+
+
+user.age = 30
+user // ?
+
+user.married = false
+user // ?
+
+user.course = {
+  name: 'javascript',
+  classes: 50,
+}
+
+user.list = ['1', 2, null]
+
+{
+  // const name = user.name // ?
+  const { name } = user
+  name // ?
+  const { course } = user
+  course // ?
+}
+
+user.fullname = function() { return `${user.name} ${user.lastname}` }
+user.fullname() //?
+user.fullname = function() { return `${this.name} ${this.lastname}` }
+user.fullname() //?

@@ -177,3 +177,75 @@ user.fullname = () => { return `${this.name} ${this.lastname}` }
 // user.fullname.bind({name: 'funalo'})() //?
 
 ['a', 'b', 'c'].map(() => {return 'leonidas'}) // ?
+
+Array() // ?
+
+const nameList = ['Leonidas', 'rivaldo', 'paula', 'carlos']
+nameList[0] //?
+nameList.length //?
+nameList[nameList.length - 1] //?
+
+// add propiedades
+nameList['wtf'] = 'what the @$@#$@#'
+nameList //?
+nameList.length //?
+nameList['wtf'] //?
+nameList.wtf //?
+nameList.wtf = 'sdfdsfdsfdsfds'
+nameList.wtf //?
+
+// const newList = nameList.concat('juanito') // ?
+
+// nameList //?
+// newList //?
+
+const newList = [...nameList, 'maria']
+newList //?
+
+newList.push('ronaldo') // ?
+newList //?
+newList.pop() //?
+newList //?
+
+//muntidimension
+nameList.push(['gonzalez', 'fernandez', 'pacheco', 'peluche'])
+
+nameList //?
+
+nameList[4][3] //?
+
+const bidimensional = [[0, 1, 0], [1, 1, 0], [0, 1, 1]]
+bidimensional[0][0] //?
+
+const ceros = []
+bidimensional.forEach((i, indexI) => {
+  i.forEach((j, indexJ) => {
+    if (j === 0) {
+      ceros.push(`${indexI} ${indexJ}`)
+    }
+  })
+})
+
+ceros // ?
+
+nameList.map(name => `el nombre es ${name}`) //?
+nameList.filter(name => {
+  if (name === 'paula') {
+    return true
+  }
+  return false
+}) // ?
+
+nameList.find(name => {
+  if (name === 'paula') {
+    return true
+  }
+  return false
+}) // ?
+
+nameList.findIndex(name => {
+  if (name === 'paula') {
+    return true
+  }
+  return false
+}) //?

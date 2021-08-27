@@ -305,3 +305,34 @@ for (let i = 0; i <= 100; i = i + 1) {
 }
 
 
+// operadores == === != !== > < >= <= ! || &&
+
+const myValue = 'value'
+
+5 == 5 //?
+5 == '' //?
+5 == '5' //?
+String(5) === '5' //?
+
+5 != 4 //?
+5 != 5 //?
+5 != '5' //?
+5 !== '5' //?
+
+5 > 10 //?
+10 > 5 //?
+
+5 >= Number('5') //?
+5 <= 5 //?
+
+// ! && ||
+
+!true //?
+!false //?
+
+name //?
+user.age //?
+
+if (name === 'Leonidas' && user.age === 30 && user.married === false) { //?
+  console.log('funcionaaa')
+}

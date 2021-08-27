@@ -336,3 +336,14 @@ user.age //?
 if (name === 'Leonidas' && user.age === 30 && user.married === false) { //?
   console.log('funcionaaa')
 }
+
+name //?
+if (name === 'Rivaldo') {
+  console.log('es rivaldo')
+} else if (name == 'Paula') {
+  console.log('es paula')
+} else if (name == 'Leonidas') {
+  console.log('es leonidasssssss')
+} else {
+  console.log('no es nadie')
+}

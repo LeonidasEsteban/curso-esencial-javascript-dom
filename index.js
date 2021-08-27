@@ -264,5 +264,39 @@ Object.keys(user).forEach(prop => {
   user[prop] //?
 }) //?
 
+// iterar arrays
+
+for (value of nameList) {
+  value //?
+}
+
+for (index in nameList) {
+  index //?
+  nameList[index] //?
+}
+
+for (let i = 0; i <= nameList.length - 1; i = i + 1) {
+  i //?
+  nameList[i] // ?
+  if (i == 2) {
+    break;
+    // return
+  }
+}
+
+let count = 0
+while (count <= nameList.length - 1) {
+  nameList[count] //?
+  count = count + 1
+}
+
+const other = []
+let count_ = 0
+do {
+  other[count_] // ?
+  count_ = count_ + 1
+} while (count_ <= other.length - 1)
+
+
 
 

@@ -249,3 +249,20 @@ nameList.findIndex(name => {
   }
   return false
 }) //?
+
+// iterar objects
+
+user //?
+
+for (prop in user) {
+  prop //?
+  user[prop] //?
+}
+
+Object.keys(user).forEach(prop => {
+  prop //?
+  user[prop] //?
+}) //?
+
+
+

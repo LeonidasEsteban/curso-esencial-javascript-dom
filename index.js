@@ -298,5 +298,10 @@ do {
 } while (count_ <= other.length - 1)
 
 
+// juanito escribe planas x 100 que digan: No debo olvidar mi cuaderno en casa
+
+for (let i = 0; i <= 100; i = i + 1) {
+  console.log('No debo olvidar mi cuaderno en casa')
+}
 
 

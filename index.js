@@ -369,3 +369,21 @@ for (let i = 0; i < 1000; i = i +1) {
 }
 
 primeNumberCountUnder1000//?
+
+let page = 'home'
+function x() {
+  switch (page) {
+    case 'home':
+      return 'es la home'
+      console.log('home')
+      break
+    case 'contact':
+      console.log('pau')
+      break
+    default:
+      console.log('home')
+      break
+  }
+}
+
+x(page) //?

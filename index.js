@@ -387,3 +387,19 @@ function x() {
 }
 
 x(page) //?
+
+try {
+  // const list = user.course.modules.list //?
+  // const list = user?.course?.modules?.list //?
+  const list = user.course.modules?.list ?? [] //?
+  list //?
+  list.forEach(item => console.log(item)) //?
+
+} catch (error) {
+  console.log('algo ha fallado', error)
+  // si algo falla
+
+} finally {
+  // esto se ejecuta de todas maneras
+  // escribir
+}

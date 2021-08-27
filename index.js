@@ -347,3 +347,25 @@ if (name === 'Rivaldo') {
 } else {
   console.log('no es nadie')
 }
+
+
+function isPrimeNumber(number) {
+  for (let i = 2; i < number ; i = i +1) {
+    if (number % i === 0) {
+      return false
+    } //?
+  }
+  return number > 1
+}
+
+isPrimeNumber(7) //?
+
+let primeNumberCountUnder1000 = 0
+
+for (let i = 0; i < 1000; i = i +1) {
+  if (isPrimeNumber(i)) {
+    primeNumberCountUnder1000 = primeNumberCountUnder1000 + 1
+  }
+}
+
+primeNumberCountUnder1000//?

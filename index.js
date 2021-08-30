@@ -403,3 +403,22 @@ try {
   // esto se ejecuta de todas maneras
   // escribir
 }
+
+function geolocation() {
+  const geolocationSupport = true
+  if (geolocationSupport) {
+    return {
+      lat: 12312321,
+      lon: 12412312312,
+    }
+  } else {
+    throw new Error('No hay soporte de geolocalización en tu navegador')
+  }
+}
+
+try {
+  const {lat, lon} = geolocation() //?
+  console.log(lat, lon)
+} catch (error){
+  console.log(error.message)
+}

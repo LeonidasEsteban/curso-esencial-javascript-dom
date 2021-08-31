@@ -1,0 +1,30 @@
+.currentWeather {
+  background: var(--gradient);
+  padding: 1.5rem;
+  color: var(--white);
+  border-radius: .5rem;
+  display: flex;
+  gap: .5rem;
+  max-inline-size: 14rem;
+}
+
+.currentWeather p {
+  margin: 0;
+}
+
+.currentWeather-temp {
+  font-size: 56px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+p.currentWeather-date {
+  font: var(--caption-caption);
+  margin-block-end: 1rem;
+}
+
+.currentWeather-city {
+  font: var(--caption-caption);
+  padding-inline-start: 1rem;
+  background: url('../images/pin-icon.svg') no-repeat left center;
+}

@@ -1,0 +1,26 @@
+.tabs {
+  color: var(--white);
+  padding-inline: 1rem;
+  inline-size: 100vw;
+  box-sizing: border-box;
+}
+
+.tab {
+  border-block-end: .25rem solid transparent;
+  padding-block-end: .5rem;
+}
+
+.tab[aria-selected="true"] {
+  color: var(--primary);
+  border-block-end-color: var(--primary);
+}
+
+.tabList {
+  gap: 1rem;
+  overflow: auto;
+}
+
+.tabList:not([hidden]) {
+  display: flex;
+}
+

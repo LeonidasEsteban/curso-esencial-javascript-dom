@@ -1,0 +1,54 @@
+.dayWeather {
+  /* border: 1px solid red; */
+}
+
+.dayWeather-list {
+  display: flex;
+  overflow: auto;
+  list-style: none;
+  padding: initial;
+  gap: 1rem;
+  inline-size: calc(100vw - 2rem);
+}
+
+.dayWeather-item {
+  inline-size: 4rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--black);
+  border-radius: 58px;
+  padding-block: 1rem;
+}
+
+.dayWeather-item > * {
+  margin: 0;
+}
+
+.dayWeather-time {
+  font: var(--body2-regular);
+}
+.dayWeather-icon {
+  max-inline-size: 100%;
+  margin-inline: .5rem;
+  object-fit: cover; /* safari */
+}
+
+.dayWeather-temp {
+  font: var(--body1-bold);
+}
+
+.dayWeather-item.is-selected {
+  box-shadow: inset 0 0 0 2px var(--primary);
+}
+
+.dayWeather-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.dayWeather-summary > * {
+}

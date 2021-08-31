@@ -1,0 +1,28 @@
+:root {
+  --white: #eff0f3;
+  --black: #393939;
+  --primary: #ff8906;
+  --grey: #535353;
+  --bg: #1f1f1f;
+  --gradient: linear-gradient(0deg, #536976 0%, #292e49 100%);
+  --subtitle2: 600 0.75rem/normal Nunito;
+  --headline-headline1: extrabold 1.5rem/normal Nunito;
+  --headline-headline2: 700 1.125rem/normal Nunito;
+  --subtitle-subtitle1: 600 1.125rem/normal Nunito;
+  --body1-regular: 400 1rem/1.5rem Nunito;
+  --body1-bold: 700 1rem/1.5rem Nunito;
+  --body2-regular: 400 0.75rem/normal Nunito;
+  --body2-bold: 700 0.75rem/normal Nunito;
+  --button-button: 600 0.875rem/1rem Nunito;
+  --caption-caption: 400 0.6875rem/normal Nunito;
+
+}
+
+body {
+  margin: 0;
+  font: var(--body1-regular);
+  /* Así evitamos el bounce scroll en la página en iOS */
+  position: fixed;
+  overflow: hidden;
+  inset: 0;
+}

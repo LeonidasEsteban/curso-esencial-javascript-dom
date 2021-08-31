@@ -4,15 +4,92 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso esencial de JavaScript y el DOM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <meta name="description" content="La mejor aplicación del clima">
+  <title>Weather App</title>
 </head>
 <body>
-  <h1>hola mundo!</h1>
-  <!-- <script src="./index.js"></script> -->
-  <script src="./index.js" type="module"></script>
-  <script>
-    // console.log('Hola mundo, desde JavaScript!')
-    // document.querySelector('h1').textContent = 'ola ke ase'
-  </script>
+  <div class="loading" id="loading" hidden></div>
+  <div class="app" id="app">
+    <div class="currentWeather">
+      <p id="current-weather-temp" class="currentWeather-temp">14°</p>
+      <div>
+        <p id="current-weather-date" class="currentWeather-date">lunes, 30 de agosto</p>
+        <p id="current-weather-city" class="currentWeather-city">Colonia Roma</p>
+      </div>
+    </div>
+    <div class="weeklyWeather">
+      <div class="weeklyWeather-marker"></div>
+      <div class="tabs" id="tabs">
+        <div class="tabList" role="tablist">
+          <div class="tab" role="tab" aria-selected="true" id="tab-0">
+            Lunes
+          </div>
+          <div class="tab" role="tab" id="tab-1">
+            Martes
+          </div>
+          <div class="tab" role="tab" id="tab-2">
+            Miercoles
+          </div>
+          <div class="tab" role="tab" id="tab-3">
+            Viernes
+          </div>
+          <div class="tab" role="tab" id="tab-4">
+            Jueves
+          </div>
+        </div>
+        <div class="tabPanel" tabindex="0" aria-labelledby="tab-0">
+          <div class="dayWeather" id="dayWeather-0">
+            <ul class="dayWeather-list" id="dayWeather-list-0">
+
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">1 a.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10n@2x.png" alt="moderate" rain="">
+                <span class="dayWeather-temp">14°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">4 a.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10n@2x.png" alt="light" rain="">
+                <span class="dayWeather-temp">14°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">7 a.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10n@2x.png" alt="moderate" rain="">
+                <span class="dayWeather-temp">14°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">10 a.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="light" rain="">
+                <span class="dayWeather-temp">14°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">1 p.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="light" rain="">
+                <span class="dayWeather-temp">16°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">4 p.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="light" rain="">
+                <span class="dayWeather-temp">19°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">7 p.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="light" rain="">
+                <span class="dayWeather-temp">18°</span>
+              </li>
+              <li class="dayWeather-item is-selected">
+                <span class="dayWeather-time">10 p.&nbsp;m.</span>
+                <img class="dayWeather-icon" src="https://openweathermap.org/img/wn/10n@2x.png" alt="light" rain="">
+                <span class="dayWeather-temp">16°</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

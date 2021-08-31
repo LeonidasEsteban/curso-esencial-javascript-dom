@@ -1,0 +1,47 @@
+.loading {
+  background-image: url('../images/sara.png'), var(--gradient);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s opacity;
+  position: absolute;
+  inset: 0;
+}
+
+.loading[hidden] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.loading:before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  inline-size: 30px;
+  block-size: 30px;
+}
+
+.loading:after {
+  content: '';
+  display: block;
+  inline-size: 200px;
+  block-size: 6px;
+  background-color: white;
+  animation: time 3s linear infinite;
+  transform-origin: left center;
+  position: relative;
+  left: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+@keyframes time {
+  from {
+
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

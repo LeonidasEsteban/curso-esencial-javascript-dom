@@ -31,7 +31,13 @@ function solarStatus(sunriseTime, sunsetTime) {
 
 function setBackground($el, conditionCode, solarStatus) {
   const weatherType = weatherConditionsCodes[conditionCode]
-  $el.style.backgroundImage = `url(./images/${solarStatus}-${weatherType}.jpg)`
+  const size = window.matchMedia('(-webkit-min-device-pixel-ratio: 2)').matches ? '@2x' : ''
+  // let size = ''
+  // if (window.matchMedia('(-webkit-min-device-pixel-ratio: 2)').matches) {
+  //   size = '@2x'
+  // }
+  // true ? '@2x' : ''
+  $el.style.backgroundImage = `url(./images/${solarStatus}-${weatherType}${size}.jpg)`
 }
 
 function configCurrentWeather(weather) {

@@ -1,7 +1,7 @@
 import weather from '../data/current-weather.js'
 import { formatDate, formatTemp } from './utils/format-data.js'
 import { weatherConditionsCodes } from './constants.js'
-import { getCurrentPosition } from './geolocation.js'
+import { getLatLon } from './geolocation.js'
 // weather.main.temp //?
 // weatherConditionsCodes[] //?
 
@@ -64,9 +64,21 @@ function configCurrentWeather(weather) {
   setBackground($app, conditionCode, solarStatus(sunriseTime, sunsetTime))
 }
 
-export default function currentWeather() {
+export default async function currentWeather() {
   // GEO // API - weather // Config
-  const latlon = getCurrentPosition()
+  console.log('esto pasa ANTES de getCurrentPosition')
+  const { lat, lon, isError } = await getLatLon()
+  if (isError) return console.log('Ah ocurrido un error ubicandote')
+  console.log(lat, lon)
+  // getCurrentPosition()
+  // .then((data) => {
+  //   console.log('hemos triunfado', data)
+
+  // })
+  // .catch((message) => {
+  //   console.log(message)
+  // })
+  // console.log('esto pasa DESPUES de getCurrentPosition')
   configCurrentWeather(weather)
-  console.log(weather)
+  // console.log(weather)
 }

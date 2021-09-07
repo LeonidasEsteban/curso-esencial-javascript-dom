@@ -115,8 +115,10 @@ export default function draggable($element, config = defaultConfig) {
     const cursorY = pageY(event)
     const movementY = cursorY - startY
     widgetPosition = widgetPosition + movementY
-    logger(movementY)
     startY = cursorY
+    if (widgetPosition > HIDDEN_Y_POSITION) {
+      return false
+    }
     setWidgetPosition(widgetPosition)
   }
 }
